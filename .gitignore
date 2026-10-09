@@ -3,6 +3,7 @@
 Despesa.class
 Conta.class
 Meta.java
+Receita.class
 # Log file
 *.log
 
