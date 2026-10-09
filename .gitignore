@@ -2,7 +2,7 @@
 *.class
 Despesa.class
 Conta.class
-
+Meta.java
 # Log file
 *.log
 
