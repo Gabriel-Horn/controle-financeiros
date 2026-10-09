@@ -1,6 +1,7 @@
 # Compiled class file
 *.class
 Despesa.class
+Conta.class
 
 # Log file
 *.log
