@@ -25,14 +25,45 @@ public class Programa.java {
         System.out.print("Cliente:" + conta.getCliente());
         System.out.println("Saldo inicial" + conta.getSaldo());
         System.out.println("----------------------------------");
-        System.out.println("Deseja depositar este valor? (1 - Sim / 2 - Não)");
+        System.out.println("Deseja depositar este valor?" + receita.getOrigem()
+            + " | Saldo inicial: R$ " + receita.getValor()
+            + "? (1-Sim / 2-Não): ");
+             
         deposito = sc.nextInt();
         if (deposito == 1) {
+            conta.setSaldo(conta.getSaldo() + receita.getValor());
             System.out.println("Salario adicionado com sucesso.");
+            System.out.println("Saldo Atual: R$ " + conta.getSaldo());
+
+        } else {
+          System.out.println("Depósito cancelado.");
         }
-        if (deposito == 2) {
-            System.out.println("Salario não depositado.");
+
+        //Despesa
+        System.out.print("Deseja pagar a despesa [" + despesa.getDescricao()
+                + "] de R$ " + despesa.getValor()
+                + "? (1-Sim / 2-Não): ");
+        opcao = entrada.nextInt();
+
+        if (opcao == 1) {
+
+            if (conta.getSaldo() + conta.getLimite() >= despesa.getValor()) {
+
+                conta.setSaldo(conta.getSaldo() - despesa.getValor());
+                despesa.setStatus("Paga");
+
+                System.out.println("Despesa paga com sucesso!");
+                System.out.println("Saldo Atual: R$ " + conta.getSaldo());
+
+            } else {
+                System.out.println("Saldo insuficiente.");
+            }
+
+        } else {
+            System.out.println("Pagamento cancelado.");
         }
+
+
         
         System.out.println("Deseja poupar R$300 para a meta ("+ conta.getObjetivo() + "?) [1 - sim  / 2 - não]" );
         int pouparResposta = sc.nextInt();
