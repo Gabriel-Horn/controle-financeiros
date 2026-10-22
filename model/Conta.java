@@ -40,11 +40,11 @@ public class Conta {
         this.cliente = cliente;
     }
     
-    public void setSaldo(String Saldo) {
+    public void setSaldo(Double Saldo) {
         this.saldo = saldo;
     }
 
-    public void setLimite(String Limite) {
+    public void setLimite(Double Limite) {
         this.limite = limite;
     }
 }
