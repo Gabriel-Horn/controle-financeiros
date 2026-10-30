@@ -35,7 +35,7 @@ public class Receita {
         
     }
     
-    public void setvalor(double valor) {
+    public void setValor(double valor) {
         
         this.valor = valor;
         
