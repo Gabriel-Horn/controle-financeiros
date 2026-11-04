@@ -15,6 +15,12 @@ public class Despesa {
         this.status = status;
       
     }
+
+     public Despesa() {
+
+    }
+    
+    
         
     //getters e setters
         
