@@ -32,19 +32,19 @@ public class Conta {
         return this.limite;
     }
     
-    public void setNumero(String Numero) {
+    public void setNumero(String numero) {
         this.numero = numero;
     }
 
-    public void setCliente(String Cliente) {
+    public void setCliente(String cliente) {
         this.cliente = cliente;
     }
     
-    public void setSaldo(Double Saldo) {
+    public void setSaldo(Double saldo) {
         this.saldo = saldo;
     }
 
-    public void setLimite(Double Limite) {
+    public void setLimite(Double limite) {
         this.limite = limite;
     }
 }
