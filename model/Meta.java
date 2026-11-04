@@ -16,6 +16,10 @@ public class Meta {
         this.valorAlvo = valorAlvo;
         this.valorPoupado = valorPoupado;
     }
+
+      public Meta() {
+
+    }
     
     
     //getters 
