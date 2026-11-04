@@ -14,6 +14,8 @@ public class Receita {
         this.valor = valor;
     }
    
+    public Receita() {
+    }
   
     //guetters setter
   
