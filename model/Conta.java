@@ -2,26 +2,30 @@ package model;
 
 public class Conta {
     
-    private String numero;
-    private String cliente;
+    private String numeroConta;
+    private String titular;
     private double saldo;
     private double limite;
     
     //CONSTRUTOR
-    public Conta (String numero, String cliente) {
+    public Conta (String numeroConta, String titular) {
         
-        this.numero = numero;
-        this.cliente = cliente;
+        this.numeroConta = numeroConta;
+        this.titular = titular;
+    }
+
+     public Conta() {
+
     }
     
     //Getters e Setters
     
-    public String getNumero() {
-        return this.numero;
+    public String getNumeroConta() {
+        return this.numeroConta;
     }
    
-    public String getCliente() {
-        return this.cliente;
+    public String getTitular() {
+        return this.titular;
     }
     
     public double getSaldo() {
@@ -32,19 +36,13 @@ public class Conta {
         return this.limite;
     }
     
-    public void setNumero(String numero) {
-        this.numero = numero;
+    public void setNumeroConta(String numeroConta) {
+        this.numeroConta = numeroConta;                                                                                                                                  
     }
 
     public void setCliente(String cliente) {
-        this.cliente = cliente;
+        this.titular = titular;
     }
     
-    public void setSaldo(Double saldo) {
-        this.saldo = saldo;
-    }
-
-    public void setLimite(Double limite) {
-        this.limite = limite;
-    }
-}
+};
+ 
